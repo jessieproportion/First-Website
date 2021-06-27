@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+font-weight: 800;
+font-size: 50px;
+
+}
+
+h2{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h4 {
+font-weight: bold;
+font-size: 20px;
+}
+
+p{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 0;
+      
+  }
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.hero-banner {
+    background-color: #007fff;
+    min-height: 100vh;
+    padding: 15% 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner h1 {
+    margin: 14px 0 20px;
+}
+
+.hero-banner h3 {
+    margin: 0 0 35px 0;
+}
+
+.hero-banner, h4,
+.hero-banner h4 a{
+    color: white;
+    margin: 0;
+}
+
+.character1{
+    background: url(characters/circle-guy.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 500px;
+    height: 550px;
+    transform: rotate(15deg);
+    position: absolute; top: 10%; right: 10%;
+}
+
+.character2{
+    background: url(characters/sticky-guy-1.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 309px;
+    height: 500px;
+    position: absolute; top: 30%; right: 300px;
+}
+
+.character3{
+    background: url(characters/ghost-guy.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 250px;
+    height: 400px;
+    position: absolute; bottom: 15%; right: 109px;
+}
+
+
+a.cta, button.cta { 
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: #007fff;
+    display: inline-block;
+    box-shadow: 0 0 0 10px rgba(0, 127, 255, .15);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+a.cta:active, button.cta:active{
+    opacity: .8;
+}
+
+a.cta.alt, button.cta.alt{
+background-color: #FFD400;
+box-shadow: 0 0 0 10px rgba(0, 0, 0, .15);
+color: #111111;
+}
+
+nav{
+    height:80px;
+    background-color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav .logo{
+    display: block;
+    width: 300px;
+    height: 50px;
+    position: absolute; top: 50%; left: 30px;
+    margin-top: -25px;
+    background: url(The_Gang.png) no-repeat 0 0;
+    background-size: 100%;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0 30px 0 0;
+}
+
+nav ul li{
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+}
+
+nav ul li a{
+    display: block;
+    height: 100;
+    box-sizing: border-box;
+    font-size: 20px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #111111;
+    text-decoration: none;
+    padding: 25px 15px;
+    line-height: 25px;
+}
+
+.introduction {
+ text-align: center;
+}
+
+.introduction p{
+    margin: 18px 0 35px;
+
+}
+
+.introduction h2{
+    margin: 50px 0 0;
+}
+
+.highlight{
+    background-color: #FFADF9;
+    color: #FF3300;
+    display: inline;
+    padding: 5px 10px;
+    line-height: 50px;
+    text-decoration: none;
+    font-weight: 800;
+
+}
+
+
+.divider{
+width: 470px;
+height: 5px;
+background-color: #111111;
+margin: 70px auto;
+}
+
+.story h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nb-list{
+    width: 470px;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    background-color: #ededed;
+    float: left;
+    margin: 0 20px 20px 0;
+    position: relative;
+}
+
+.nb-list li{
+    height: 70px;
+    border-radius: 10px; 
+    font-size: 40px;
+    color: white;
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 20px;
+    padding: 6px 20px;
+    box-sizing:border-box;
+
+}
+
+.nb-list li.red{background-color: #FF3300;}
+.nb-list li.blue{background-color: #007fff;}
+.nb-list li.grey{background-color: rgba(0, 0, 0, .1);}
+.nb-list li.pink{background-color: #FFADF9;}
+.nb-list li.salmon{background-color: #FA8072;}
+.nb-list li.yellow{
+    background-color: #FFD400;
+    color: #111111;}
+
+.nb-list li.dragging{
+        position: absolute;
+        top: 70px;
+        left: 60px;
+        right: -30px;
+        transform: rotate(6deg);
+        box-shadow:0 2px 14px rgba(0, 0, 0, .2)
+}
+
+.nb-list li.dragging:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 63px;
+    background: url(cursor.png) no-repeat 0 0;
+    background-size: 100%;
+    left: 60%;
+    bottom: -30px;
+}
+
+.gang-img{
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    color: rgba(0, 0, 0, .4);
+    font-size: 20px;
+    margin: 85px 0 45px;
+    font-weight: bold;
+}
+
+.popup{
+    display:none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.popup.show{
+    display:block;
+}
+
+.popup .window{
+background-color: rgba(0, 0, 0, .7);
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+
+}
+
+.popup .content{
+    position: absolute;
+    width: 960px;
+    height: 470px;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    background-color: white;
+    text-align:center;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -480px;
+}
+
+.popup h2{
+    margin: 10px 0 20px;
+}
+
+.popup .cta{
+    margin: 50px 0 10px;
+}
+
+.popup .close-button{
+    width: 80px;
+    height: 80px;
+    background: #ff3300 url(Close_Button.png) no-repeat center center;
+    background-size: 50%;
+    top: -40px; 
+    right: -40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.popup .row{
+    
+}
+
+.popup .row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.popup .item{
+    float: left;
+    width: 415px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.popup .item label{
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+}
+
+.popup .item:first-child{
+    margin-left: 0;
+}
+
+.popup .item{
+    float: left;
+    width: 415px;
+    margin-left: 40px;
+}
+
+.popup .item input[type='text']{
+    display: block;
+    font-size: 15px;
+    border: 1px solid #111111;
+    height: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 10px;
+}
+
+/*
+<div class="popup"> 
+    <div class="window"></div>
+    <div class="content">
+        <h2>Fill In Your Details</h2>
+        <form action-""> 
+            <div class="item"> 
+                <label> Your First Name </label>
+                <input type="text" placeholder="Awesomeface" value="Shirley"> 
+            </div>
+            <div class="item"> 
+                <label> Your Last Name </label>
+                <input type="text" placeholder="Circleface"> 
+            </div>
+            <div class="item"> 
+                <label>Your Favorite Color </label>
+                <input type="text" placeholder="Pink"> 
+            </div>
+            <div class="item"> 
+                <label>Your Favorite Food </label>
+                <input type="text" placeholder="Pumpkin Pie"> 
+            </div>
+            <button class="cta">I Want In!</button>
+
+        </form>
+    <button class="close-button">Close</button>
+</div>
+</div>
+*/
